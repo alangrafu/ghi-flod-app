@@ -1,0 +1,6 @@
+SELECT ?la ?lo ?ab WHERE{
+  <{{first.same.dbp.value}}> <http://www.w3.org/2003/01/geo/wgs84_pos#lat> ?la;
+                             <http://www.w3.org/2003/01/geo/wgs84_pos#long> ?lo;
+                             <http://dbpedia.org/ontology/abstract> ?ab .
+  FILTER(LANG(?ab) = "en")
+}LIMIT 1

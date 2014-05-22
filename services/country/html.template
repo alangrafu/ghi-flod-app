@@ -1,0 +1,31 @@
+{%extends "components/includes/base.html"%}
+{%block content%}
+<div class="container">
+<h1>{%for row in queries.details%}{{row.label.value}}{%endfor%}</h1>
+<div class="row">
+  <div class="col-md-4">
+  {%for i in queries.ghi%}
+   {{i.val.value}} {{i.year.value}}</br>
+  {%endfor%} 
+   </div>
+   <div class="col-md-4">
+  {%for i in queries.puw%}
+   {{i.val.value}} {{i.year.value}}</br>
+  {%endfor%} 
+  </div>
+ </div>
+<div class="row">
+  <div class="col-md-4">
+  {%for i in queries.pun%}
+   {{i.val.value}} {{i.year.value}}</br>
+  {%endfor%} 
+   </div>
+   <div class="col-md-4">
+  {%for i in queries.mr%}
+   {{i.val.value}} {{i.year.value}}</br>
+  {%endfor%} 
+  </div>
+ </div>
+
+</div>
+{%endblock%}

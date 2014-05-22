@@ -1,0 +1,11 @@
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX qb: <http://purl.org/linked-data/cube#>
+PREFIX local_structure: <http://data.kasabi.com/dataset/global-hunger-index/structure/>
+
+SELECT DISTINCT ?country (SAMPLE(?label) AS ?countryLabel) WHERE{
+  ?m qb:measureType [] ;
+     local_structure:refArea ?country .
+  ?country rdfs:label ?label .
+  FILTER(LANG(?label) = "en")
+}GROUP BY ?country
+ORDER BY ?countryLabel

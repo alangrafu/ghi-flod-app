@@ -1,0 +1,5 @@
+PREFIX local_structure: <http://data.kasabi.com/dataset/global-hunger-index/structure/>
+SELECT ?dbp WHERE{
+  <http://sws.geonames.org/{{args[0]}}/> owl:sameAs ?dbp .
+  FILTER(regex(str(?dbp), "^http://dbpedia.org", "i"))
+}

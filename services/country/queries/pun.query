@@ -1,0 +1,10 @@
+PREFIX local_structure: <http://data.kasabi.com/dataset/global-hunger-index/structure/>
+PREFIX qb: <http://purl.org/linked-data/cube#>
+
+SELECT ?obs ?val ?year WHERE{
+  ?obs local_structure:refArea <http://sws.geonames.org/{{args[0]}}/>;
+       local_structure:yearOfGHI ?year;
+       local_structure:supportingDataPUN ?val ;
+       qb:measureType local_structure:supportingDataPUN .
+}
+ORDER BY ?year       

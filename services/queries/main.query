@@ -1,0 +1,5 @@
+SELECT DISTINCT ?measure ?measureLabel WHERE {
+  ?measure rdfs:label ?measureLabel ;
+           a qb:MeasureProperty .
+  [] qb:measureType ?measure .
+}ORDER BY ?measureLabel

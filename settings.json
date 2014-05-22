@@ -1,8 +1,8 @@
 {
- 	"modules": [ "Static", "Users", "Services", "Types"],
+ 	"modules": [ "Static", "Services", "Types"],
  	"ns": {
- 		"local": "http://localhost:5001/",
- 		"origin": "http://data.kasabi.com/dataset/global-hunger-index/"
+ 		"local": "http://localhost:5113/",
+ 		"origin": "http://sws.geonames.org/"
  	},
  	"mirrored": true,
  	"endpoints": {
@@ -10,10 +10,10 @@
  		"dbpedia": "http://dbpedia.org/sparql"
  	},
  	"host": "0.0.0.0",
- 	"port": 5001,
+ 	"port": 5113,
  	"flod": { 
  	  "title": "FLOD"
  	},
  	"secret": "902618746309637220",
- 	"root": "home"
+ 	"root": "countries"
 }

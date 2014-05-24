@@ -15,7 +15,9 @@
 			padding-bottom: 40px;
 			background-color: #eee;
 		}
-
+		.text-justify {
+  			text-align: justify;
+		}
 		.form-signin {
 			max-width: 330px;
 			padding: 15px;

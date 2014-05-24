@@ -1,5 +1,5 @@
 {
- 	"modules": [ "Static", "Services", "Types"],
+ 	"modules": [ "Static", "Services"],
  	"ns": {
  		"local": "http://localhost:5113/",
  		"origin": "http://sws.geonames.org/"
@@ -15,5 +15,6 @@
  	  "title": "FLOD"
  	},
  	"secret": "902618746309637220",
+	"debug" :true,
  	"root": "countries"
 }

@@ -8,7 +8,7 @@
       <h2>Countries</h2>
  	    <ul>
     {% for row in queries.main %}
-        <li><a href="{{ row.country.value}}">{{row.countryLabel.value}}</a></li>
+        <li><a href="country/{{row.country.value|replace(flod.localns, "")}}">{{row.countryLabel.value}}</a></li>
     {% endfor %}
       </ul>
     </div>

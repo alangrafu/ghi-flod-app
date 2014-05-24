@@ -4,26 +4,22 @@
   <h1>{%for row in queries.details%}{{row.label.value}}{%endfor%}</h1>
   <div class="row">
     <div class="col-md-4">
-      {%for i in queries.ghi%}
-      <p>{{i.val.value}} {{i.year.value}}</p>
-      {%endfor%} 
+      <h2>GHI</h2>
+      {{queries.ghi|BarChart(x="year", y="val")}}
     </div>
     <div class="col-md-4">
-      {%for i in queries.puw%}
-      <p>{{i.val.value}} {{i.year.value}}</p>
-      {%endfor%} 
+    <h2>PUW</h2>
+    {{queries.puw|BarChart(x="year", y="val")}}
     </div>
   </div>
   <div class="row">
     <div class="col-md-4">
-      {%for i in queries.pun%}
-      <p>{{i.val.value}} {{i.year.value}}</p>
-      {%endfor%} 
+    <h2>PUN</h2>
+    {{queries.pun|BarChart(x="year", y="val")}}
     </div>
     <div class="col-md-4">
-      {%for i in queries.mr%}
-      <p>{{i.val.value}} {{i.year.value}}</p>
-      {%endfor%} 
+    <h2>MR</h2>
+    {{queries.mr|BarChart(x="year", y="val")}}
     </div>
   </div>
   <div class="row">
@@ -35,6 +31,6 @@
     <div class="col-md-4">
       {{queries.map|GoogleMaps(lat="la", lon="lo", zoom=3)}}
     </div>
-  </div>
+  </div>  
 </div>
 {%endblock%}

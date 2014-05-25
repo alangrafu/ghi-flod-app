@@ -3,9 +3,11 @@ PREFIX qb: <http://purl.org/linked-data/cube#>
 
 
 SELECT ?obs ?val ?year WHERE{
+ GRAPH <{{flod.namedgraph}}>{
   ?obs local_structure:refArea <http://sws.geonames.org/{{args[0]}}/>;
        local_structure:yearOfGHI ?year;
        local_structure:supportingDataPUW ?val ;
        qb:measureType local_structure:supportingDataPUW .
+ }
 }
 ORDER BY ?year       

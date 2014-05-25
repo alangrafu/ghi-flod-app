@@ -13,9 +13,10 @@
  	"port": 5113,
  	"flod": { 
  	  "title": "GHI Demo",
-          "localns": "http://localhost:5113/"
+      "localns": "http://localhost:5113/",
+      "namedgraph": "http://graves.cl/ghi"
  	},
  	"secret": "902618746309637220",
-	"debug" :true,
+	"debug" : false,
  	"root": "countries"
 }

@@ -1,3 +1,0 @@
-SELECT DISTINCT ?c WHERE{
-  [] a ?c .
-}LIMIT 100

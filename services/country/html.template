@@ -4,21 +4,21 @@
   <h1>{%for row in queries.details%}{{row.label.value}}{%endfor%}</h1>
   <div class="row">
     <div class="col-md-4">
-      <h2>GHI</h2>
+      <h4>Global Hunger Index</h4>
       {{queries.ghi|BarChart(x="year", y="val")}}
     </div>
     <div class="col-md-4">
-    <h2>PUW</h2>
+    <h4>Prevalence of underweight in children under five (in %)</h4>
     {{queries.puw|BarChart(x="year", y="val")}}
     </div>
   </div>
   <div class="row">
     <div class="col-md-4">
-    <h2>PUN</h2>
+    <h4>Proportion of children dying before the age of five (in %)</h4>
     {{queries.pun|BarChart(x="year", y="val")}}
     </div>
     <div class="col-md-4">
-    <h2>MR</h2>
+    <h4>Proportion of the the population that is undernourished (in %)</h4>
     {{queries.mr|BarChart(x="year", y="val")}}
     </div>
   </div>

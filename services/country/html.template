@@ -25,7 +25,7 @@
   <div class="row">
     <div class="col-md-6">
       <p class="text-justify">
-      {{first.map.ab.value}}
+      {%if first.map.ab is defined %}{{first.map.ab.value}}{%endif%}
       </p>
     </div>
     <div class="col-md-6">

@@ -4,7 +4,7 @@
       <h1>The Global Hunger Index (Demo for IOGDC2012)</h1>
       <p>The Global Hunger Index (GHI) is a tool adapted and further developed by the International Food Policy Research Institute (IFPRI) to compre- hensively measure and track global hunger.1 The GHI incorporates three interlinked hunger-related indicators – the proportion of under- nourished in the population, the prevalence of underweight in children, and the mortality rate of children.</p>
       <h2>Source Code</h2>
-      This is a <a href='http://github.com/alangrafu/flod'>FLOD</a> application, based on an existing one created using  <a href='http://lodspeakr.org'>LODSPeaKr</a>. The components used to create are available at <a href='https://github.com/alangrafu/ghi-flod-app'>https://github.com/alangrafu/ghi-flod-app</a>. Instructions on how to install this demo are available in the README file.
+      This is a <a href='http://github.com/alangrafu/flod'>FLOD</a> application, based on an existing one created using  <a href='http://lodspeakr.org'>LODSPeaKr</a>. The components used to create this FLOD application are available at <a href='https://github.com/alangrafu/ghi-flod-app'>https://github.com/alangrafu/ghi-flod-app</a>. Instructions on how to install this demo are available in the README file.
       <h2>Countries</h2>
  	    <ul>
     {% for row in queries.main %}

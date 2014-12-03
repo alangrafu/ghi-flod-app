@@ -6,7 +6,7 @@
  	},
  	"mirrored": true,
  	"endpoints": {
- 		"local": "http://localhost:3030/ghi/query",
+ 		"local": "http://localhost:8890/sparql",
  		"dbpedia": "http://dbpedia.org/sparql"
  	},
  	"host": "0.0.0.0",
